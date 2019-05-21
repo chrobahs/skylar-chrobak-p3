@@ -1,0 +1,70 @@
+body{
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
+  font-family:'Open Sans', sans-serif;
+  color: darkgreen;
+  margin:0;
+  background-image: url("og.jpg");
+}
+header{
+  display:flex;
+  padding:3px;
+  color:yellowgreen;
+  background-color: olivedrab;
+  border-bottom: solid 2px darkgreen;
+}
+header .header-title{
+  display:inline-block;
+}
+header .header-menu {
+  flex-grow:1;
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  color:olive;
+  font-size:smaller;
+}
+main{
+  flex:1;
+}
+main #display-content{
+  padding: 10px;
+}
+#modal-backdrop{
+  display: none;
+  position: absolute;
+  height: 200vh;
+  width: 200vw;
+  background-color: limegreen;
+}
+#modal-background.visible{
+  display:block;
+}
+.modal{
+  display:none;
+  position:absolute;
+  padding:10px;
+  border:solid 2px #7FFF00;
+  background-color: palegreen;
+  z-index: 99999;
+  width: 400px;
+  height: 400px;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+.modal.visible{
+  display:block;
+}
+.modal-content{
+  width:400px;
+  height:400px;
+}
+#edit-title{
+  width:400px;
+}
+#edit-content-text{
+  width:100%;
+  box-sizing:border-box;
+}
